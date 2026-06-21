@@ -38,6 +38,10 @@
             textBox1 = new TextBox();
             label1 = new Label();
             panel2 = new Panel();
+            panel3 = new Panel();
+            button6 = new Button();
+            button4 = new Button();
+            button1 = new Button();
             button5 = new Button();
             button3 = new Button();
             button2 = new Button();
@@ -48,16 +52,12 @@
             userControlPanelToolStripMenuItem = new ToolStripMenuItem();
             systemAnalyticsToolStripMenuItem = new ToolStripMenuItem();
             aboutUsToolStripMenuItem = new ToolStripMenuItem();
-            panel3 = new Panel();
-            button1 = new Button();
-            button4 = new Button();
-            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
-            menuStrip1.SuspendLayout();
             panel3.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // linkLabel1
@@ -123,9 +123,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 16);
+            pictureBox2.Location = new Point(50, 16);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(172, 91);
+            pictureBox2.Size = new Size(126, 94);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -165,6 +165,55 @@
             panel2.Size = new Size(1409, 508);
             panel2.TabIndex = 4;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.LightSkyBlue;
+            panel3.Controls.Add(button6);
+            panel3.Controls.Add(button4);
+            panel3.Controls.Add(button1);
+            panel3.Controls.Add(button5);
+            panel3.Location = new Point(638, 65);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(643, 347);
+            panel3.TabIndex = 5;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.LightGray;
+            button6.Cursor = Cursors.Hand;
+            button6.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.Location = new Point(148, 192);
+            button6.Name = "button6";
+            button6.Size = new Size(373, 49);
+            button6.TabIndex = 7;
+            button6.Text = "System Analytics";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.LightGray;
+            button4.Cursor = Cursors.Hand;
+            button4.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Location = new Point(148, 113);
+            button4.Name = "button4";
+            button4.Size = new Size(373, 49);
+            button4.TabIndex = 6;
+            button4.Text = "User Control Panel";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.LightGray;
+            button1.Cursor = Cursors.Hand;
+            button1.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(148, 36);
+            button1.Name = "button1";
+            button1.Size = new Size(373, 49);
+            button1.TabIndex = 5;
+            button1.Text = "Equipment Registry";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // button5
             // 
             button5.BackColor = Color.Red;
@@ -200,6 +249,7 @@
             button2.TabIndex = 1;
             button2.Text = "Issue / Check Out";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // menuStrip1
             // 
@@ -227,19 +277,19 @@
             // equipmentRegistryToolStripMenuItem
             // 
             equipmentRegistryToolStripMenuItem.Name = "equipmentRegistryToolStripMenuItem";
-            equipmentRegistryToolStripMenuItem.Size = new Size(224, 26);
+            equipmentRegistryToolStripMenuItem.Size = new Size(221, 26);
             equipmentRegistryToolStripMenuItem.Text = "Equipment Registry";
             // 
             // userControlPanelToolStripMenuItem
             // 
             userControlPanelToolStripMenuItem.Name = "userControlPanelToolStripMenuItem";
-            userControlPanelToolStripMenuItem.Size = new Size(224, 26);
+            userControlPanelToolStripMenuItem.Size = new Size(221, 26);
             userControlPanelToolStripMenuItem.Text = "User Control Panel";
             // 
             // systemAnalyticsToolStripMenuItem
             // 
             systemAnalyticsToolStripMenuItem.Name = "systemAnalyticsToolStripMenuItem";
-            systemAnalyticsToolStripMenuItem.Size = new Size(224, 26);
+            systemAnalyticsToolStripMenuItem.Size = new Size(221, 26);
             systemAnalyticsToolStripMenuItem.Text = "System Analytics";
             systemAnalyticsToolStripMenuItem.Click += systemAnalyticsToolStripMenuItem_Click;
             // 
@@ -248,54 +298,6 @@
             aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             aboutUsToolStripMenuItem.Size = new Size(84, 24);
             aboutUsToolStripMenuItem.Text = "About Us";
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.LightSkyBlue;
-            panel3.Controls.Add(button6);
-            panel3.Controls.Add(button4);
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(button5);
-            panel3.Location = new Point(638, 65);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(643, 347);
-            panel3.TabIndex = 5;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.LightGray;
-            button1.Cursor = Cursors.Hand;
-            button1.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(148, 36);
-            button1.Name = "button1";
-            button1.Size = new Size(373, 49);
-            button1.TabIndex = 5;
-            button1.Text = "Equipment Registry";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.LightGray;
-            button4.Cursor = Cursors.Hand;
-            button4.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(148, 113);
-            button4.Name = "button4";
-            button4.Size = new Size(373, 49);
-            button4.TabIndex = 6;
-            button4.Text = "User Control Panel";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.LightGray;
-            button6.Cursor = Cursors.Hand;
-            button6.Font = new Font("Arial Rounded MT Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.Location = new Point(148, 192);
-            button6.Name = "button6";
-            button6.Size = new Size(373, 49);
-            button6.TabIndex = 7;
-            button6.Text = "System Analytics";
-            button6.UseVisualStyleBackColor = false;
             // 
             // adminDashboard
             // 
@@ -313,9 +315,9 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            panel3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }

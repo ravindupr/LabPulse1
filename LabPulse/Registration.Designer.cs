@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             label1 = new Label();
             panel1 = new Panel();
             textBox5 = new TextBox();
@@ -74,9 +75,9 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(190, 26);
+            panel1.Location = new Point(198, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(535, 656);
+            panel1.Size = new Size(535, 701);
             panel1.TabIndex = 1;
             // 
             // textBox5
@@ -196,11 +197,15 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonShadow;
+            BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(941, 725);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Registration";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Registration";
+            Load += Registration_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

@@ -12,7 +12,7 @@ namespace LabPulse
 
         private void button1_Click(object sender, EventArgs e)
         {
-            login loginForm = new login();
+            Login loginForm = new Login();
             loginForm.Show();
             this.Hide();
         }
@@ -22,6 +22,11 @@ namespace LabPulse
             Registration registrationForm = new Registration();
             registrationForm.Show();
             this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

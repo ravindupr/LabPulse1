@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -5,7 +6,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-
+using System.Data;
+using MySql.Data.MySqlClient;
 namespace LabPulse
 {
     public partial class profile : Form
@@ -68,6 +70,12 @@ namespace LabPulse
             // 3. Close the profile page itself
             this.Close();
         }
+
+        private void profile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
 

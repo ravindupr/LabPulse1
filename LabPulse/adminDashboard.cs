@@ -68,5 +68,25 @@ namespace LabPulse
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Pass 'this' (the adminDashboard) into the constructor
+            ManageEquipment manageForm = new ManageEquipment(this);
+
+            manageForm.Show(); // Open the management form
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Issue issueForm = new Issue();
+
+            // 2. Display the Issue screen
+            issueForm.Show();
+
+            // 3. Hide the current dashboard so the workspace stays clean
+            this.Hide();
+        }
     }
 }

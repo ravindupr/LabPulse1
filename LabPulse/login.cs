@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace LabPulse
 {
-    public partial class login : Form
+    public partial class Login : Form
     {
         private string connectionString = "Server=localhost;Database=labpulse_db;Uid=root;Pwd=;";
-        public login()
+        public Login()
         {
             InitializeComponent();
         }
@@ -85,7 +85,7 @@ namespace LabPulse
                 }
             }
         }
-        
+
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -104,6 +104,11 @@ namespace LabPulse
             Form1 welcomePage = new Form1();
             welcomePage.Show();
             this.Hide();
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
